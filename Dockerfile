@@ -15,7 +15,7 @@ RUN pip3 install huggingface-hub==0.27.1
 RUN pip3 install accelerate
 COPY ./main.py /app/main.py
 
-EXPOSE 7000
+EXPOSE 7002
 ENV HOST 0.0.0.0
 
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "7000", "--reload"]
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "7002", "--reload"]
